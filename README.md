@@ -141,7 +141,9 @@ This view centralizes:
 
 This improved query readability and maintainability.
 
----
+<img width="1401" height="737" alt="2_ViewCreation" src="https://github.com/user-attachments/assets/45419005-e27e-4646-9bca-7db89616c51b" />
+
+-
 
 ## SQL Concepts Used
 
@@ -197,6 +199,9 @@ This improved query readability and maintainability.
 * Pricing vs customer satisfaction analysis
 * Affordable high-performing restaurant identification
 
+  <img width="872" height="437" alt="3_Affordable_Restaurants_Analysis" src="https://github.com/user-attachments/assets/1a7f03a8-a9b4-4877-bab2-c3dd55360d6f" />
+
+
 ### Brand Performance Analysis
 
 * Restaurant chains by outlet presence
@@ -206,6 +211,9 @@ This improved query readability and maintainability.
 ### Cuisine Analysis
 
 * Top-performing cuisine combinations by ratings and engagement
+
+<img width="816" height="737" alt="4_Top_Restaurants_Analysis" src="https://github.com/user-attachments/assets/606a9728-4d2f-44bc-b2a8-1793fbd71db7" />
+
 
 ### Discovery Analysis
 
