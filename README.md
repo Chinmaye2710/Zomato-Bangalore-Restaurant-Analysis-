@@ -212,7 +212,7 @@ This improved query readability and maintainability.
 
 * Top-performing cuisine combinations by ratings and engagement
 
-<img width="816" height="737" alt="4_Top_Restaurants_Analysis" src="https://github.com/user-attachments/assets/606a9728-4d2f-44bc-b2a8-1793fbd71db7" />
+
 
 
 ### Discovery Analysis
@@ -222,7 +222,7 @@ This improved query readability and maintainability.
 ### Advanced Ranking Analysis
 
 * Top-performing unique restaurants by Bangalore location
-
+<img width="816" height="737" alt="4_Top_Restaurants_Analysis" src="https://github.com/user-attachments/assets/606a9728-4d2f-44bc-b2a8-1793fbd71db7" />
 ---
 
 ## Key Business Insights
