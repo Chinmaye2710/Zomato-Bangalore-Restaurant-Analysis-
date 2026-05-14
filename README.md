@@ -256,16 +256,6 @@ This project significantly strengthened both technical SQL skills and analytical
 * Identifying performance patterns and opportunity gaps
 * Converting raw data into actionable insights
 
----
-
-## Conclusion
-
-This project demonstrates a complete SQL-based analytics workflow using real-world restaurant data.
-
-It combines data preparation, transformation, advanced querying, and business intelligence analysis to generate practical insights from operational business data.
-
----
-
 ## Author
 
 **Chinmaye Datta Kasarla**
