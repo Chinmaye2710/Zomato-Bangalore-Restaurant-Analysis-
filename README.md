@@ -75,6 +75,9 @@ Prepared the dataset for analysis by:
 * Handling missing values
 * Standardizing cost fields
 * Removing duplicate records
+  
+  <img width="1487" height="562" alt="1_DuplicatesAnalysis" src="https://github.com/user-attachments/assets/24885f7b-a543-4fc5-b743-a6a64e720e1b" />
+
 
 ### Feature Engineering
 
@@ -115,7 +118,8 @@ The view centralizes:
 * Engineered business features
 * Analysis-ready metrics
 
----
+<img width="1401" height="737" alt="2_ViewCreation" src="https://github.com/user-attachments/assets/be73737b-7cd0-43be-986c-499a09aade04" />
+
 
 ## SQL Concepts Applied
 
@@ -139,12 +143,16 @@ The view centralizes:
 * Ranking Logic
 * Deduplication Techniques
 
+  <img width="816" height="737" alt="4_Top_Restaurants_Analysis" src="https://github.com/user-attachments/assets/20e01651-b60d-41b3-8cc0-d8463dcec043" />
+
+
 ### Database Design
 
 * View Creation
 * Analytical Data Modeling
 
----
+<img width="872" height="437" alt="3_Affordable_Restaurants_Analysis" src="https://github.com/user-attachments/assets/5dcd3f8e-7e51-4656-bc39-b7cd937a0c94" />
+
 
 ## Power BI Data Model
 
@@ -162,7 +170,7 @@ A star schema was designed using the analytical SQL view.
 
 The model supports scalable reporting and interactive business analysis.
 
----
+<img width="1237" height="742" alt="Schema" src="https://github.com/user-attachments/assets/b4681276-3612-441a-9eff-e2760acb3f6b" />
 
 ## Dashboard Pages
 
@@ -177,7 +185,9 @@ Provides a high-level summary of the Bangalore restaurant market:
 * Rating Distribution
 * Cost Distribution
 
-  https://github.com/Chinmaye2710/Zomato-Bangalore-Restaurant-Analysis-/blob/master/3_ScreenShots/5_Bangalore%20Restaurant%20Market%20Overview.png
+<img width="1286" height="722" alt="6_Location Performance Analysis" src="https://github.com/user-attachments/assets/5939d38b-102f-4ab6-87e8-bb2882757f0c" />
+<img width="1282" height="723" alt="5_Bangalore Restaurant Market Overview" src="https://github.com/user-attachments/assets/d5a058cb-b411-4a75-9f81-470cdc472bc4" />
+
 
 ### Location Performance Analysis
 
@@ -188,7 +198,8 @@ Compares restaurant performance across locations:
 * Cost vs rating analysis
 * Location benchmarking
 
-  https://github.com/Chinmaye2710/Zomato-Bangalore-Restaurant-Analysis-/blob/master/3_ScreenShots/6_Location%20Performance%20Analysis.png
+![Uploading 6_Location Performance Analysis.png…]()
+
 
 ### Service & Discovery Analysis
 
@@ -200,7 +211,8 @@ Evaluates business models and customer behavior:
 * Top-performing restaurant chains
 * Affordable high-rated restaurant discovery
 
-https://github.com/Chinmaye2710/Zomato-Bangalore-Restaurant-Analysis-/blob/master/3_ScreenShots/7_Service%20%26%20Customer%20Experience%20Analysis.png
+<img width="1277" height="721" alt="7_Service   Customer Experience Analysis" src="https://github.com/user-attachments/assets/b379884f-e81b-4d2a-aad4-65c88e642f16" />
+
 
 ## Key Insights
 
