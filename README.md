@@ -177,6 +177,8 @@ Provides a high-level summary of the Bangalore restaurant market:
 * Rating Distribution
 * Cost Distribution
 
+  https://github.com/Chinmaye2710/Zomato-Bangalore-Restaurant-Analysis-/blob/master/3_ScreenShots/5_Bangalore%20Restaurant%20Market%20Overview.png
+
 ### Location Performance Analysis
 
 Compares restaurant performance across locations:
@@ -185,6 +187,8 @@ Compares restaurant performance across locations:
 * Rating vs restaurant count
 * Cost vs rating analysis
 * Location benchmarking
+
+  https://github.com/Chinmaye2710/Zomato-Bangalore-Restaurant-Analysis-/blob/master/3_ScreenShots/6_Location%20Performance%20Analysis.png
 
 ### Service & Discovery Analysis
 
@@ -196,7 +200,7 @@ Evaluates business models and customer behavior:
 * Top-performing restaurant chains
 * Affordable high-rated restaurant discovery
 
----
+https://github.com/Chinmaye2710/Zomato-Bangalore-Restaurant-Analysis-/blob/master/3_ScreenShots/7_Service%20%26%20Customer%20Experience%20Analysis.png
 
 ## Key Insights
 
