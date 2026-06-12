@@ -186,7 +186,6 @@ Provides a high-level summary of the Bangalore restaurant market:
 * Cost Distribution
 
 <img width="1286" height="722" alt="6_Location Performance Analysis" src="https://github.com/user-attachments/assets/5939d38b-102f-4ab6-87e8-bb2882757f0c" />
-<img width="1282" height="723" alt="5_Bangalore Restaurant Market Overview" src="https://github.com/user-attachments/assets/d5a058cb-b411-4a75-9f81-470cdc472bc4" />
 
 
 ### Location Performance Analysis
