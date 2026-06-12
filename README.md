@@ -1,60 +1,55 @@
-# Zomato Bangalore Restaurant Analysis using SQL Server
+# Bangalore Restaurant Analytics | SQL Server & Power BI
 
-## Project Overview
+## Overview
 
-This project presents an end-to-end SQL analytics workflow using the Zomato Bangalore restaurant dataset. The objective was to transform messy real-world restaurant data into a clean analytical model and generate meaningful business insights using SQL Server.
+This project presents an end-to-end restaurant analytics solution built using SQL Server and Power BI. Starting from raw restaurant data, the project focuses on data cleaning, transformation, feature engineering, analytical modeling, and dashboard development to uncover insights about Bangalore's restaurant market.
 
-The project covers the full analytics lifecycle, including data auditing, cleaning, transformation, feature engineering, analytical modeling, and business analysis.
+The goal was to transform a messy real-world dataset into a structured analytical model capable of answering key business questions related to restaurant performance, customer engagement, pricing strategies, and market opportunities.
 
 ---
 
-## Problem Statement
+## Business Questions
 
-Restaurant datasets often contain incomplete, inconsistent, and duplicated information, making direct analysis unreliable.
+The analysis was designed to answer questions such as:
 
-This project focuses on answering key business questions such as:
-
-* Which locations in Bangalore have the highest restaurant concentration?
-* Which locations perform best in customer satisfaction?
-* Does delivery availability impact restaurant performance?
-* Does table booking correlate with stronger business performance?
-* Do premium restaurants consistently outperform affordable ones?
-* Which restaurant brands dominate the Bangalore market?
-* Where do potential market opportunities exist?
+* Which Bangalore locations have the highest restaurant concentration?
+* Which locations achieve the strongest customer ratings?
+* How does online ordering impact customer engagement?
+* Do restaurants offering table booking perform better?
+* Which pricing segments dominate the market?
+* Which restaurant chains generate the highest customer engagement?
+* Which restaurants provide the best balance between quality and affordability?
 
 ---
 
 ## Dataset Information
 
-**Source:** Kaggle – Zomato Bangalore Restaurants Dataset
-
-### Dataset Summary
+**Source:** Zomato Bangalore Restaurant Dataset (Kaggle)
 
 | Metric                   | Value  |
 | ------------------------ | ------ |
 | Raw Records              | 51,717 |
-| Cleaned Records          | 51,352 |
+| Cleaned Records          | 51,265 |
 | Initial Columns          | 17     |
 | Final Analytical Columns | 13     |
 
 ### Data Quality Challenges
 
-The raw dataset included:
-
-* Missing values
-* Duplicate restaurant listings
-* Inconsistent rating formats
+* Missing ratings
+* Duplicate restaurant records
 * Mixed datatypes
-* Noisy or irrelevant columns
-* Repeated business records
+* Inconsistent formatting
+* Noisy and irrelevant attributes
+* Repeated outlet listings
 
 ---
 
-## Tools Used
+## Tools & Technologies
 
 * Microsoft SQL Server
 * SQL Server Management Studio (SSMS)
-* Kaggle Dataset
+* Power BI Desktop
+* Git & GitHub
 
 ---
 
@@ -62,45 +57,30 @@ The raw dataset included:
 
 ### Data Auditing
 
-The initial stage focused on understanding the dataset structure and identifying quality issues before transformation.
+Initial exploration and quality assessment of the raw dataset:
 
-Activities performed:
-
-* Schema inspection
 * Row count validation
-* Datatype verification
-* Null value analysis
-* Distinct value exploration
+* Datatype inspection
+* Missing value analysis
 * Duplicate detection
-* Data inconsistency checks
+* Schema validation
 
----
+### Data Cleaning & Transformation
 
-### Data Cleaning and Transformation
-
-The raw dataset required preprocessing before analysis.
-
-Cleaning steps included:
+Prepared the dataset for analysis by:
 
 * Removing unnecessary columns
-* Standardizing restaurant rating formats
-* Converting textual numeric values into appropriate datatypes
+* Cleaning rating formats
+* Converting datatypes
 * Handling missing values
-* Cleaning pricing-related fields
-* Creating unique row identifiers
-* Validating transformed records
-
-This process converted raw data into an analysis-ready structure.
-
----
+* Standardizing cost fields
+* Removing duplicate records
 
 ### Feature Engineering
 
-To improve business analysis and segmentation, custom analytical features were created.
+Created analytical business segments:
 
-**Engineered Columns:**
-
-**rating_category**
+**Rating Category**
 
 * Excellent
 * Good
@@ -108,7 +88,7 @@ To improve business analysis and segmentation, custom analytical features were c
 * Poor
 * Unrated
 
-**cost_bucket**
+**Cost Bucket**
 
 * Budget
 * Affordable
@@ -116,54 +96,39 @@ To improve business analysis and segmentation, custom analytical features were c
 * Premium
 * Luxury
 
-**popularity_bucket**
+**Popularity Bucket**
 
 * Low Popularity
 * Moderate Popularity
 * Popular
 * High Popularity
 
-These engineered fields simplified segmentation and comparative analysis.
-
----
-
 ### Analytical Modeling
 
-A reusable analytical SQL view was created:
+Created a reusable analytical view:
 
 **vw_restaurant_core**
 
-This view centralizes:
+The view centralizes:
 
-* Cleaned restaurant records
-* Engineered analytical features
-* Business-ready restaurant metrics
+* Cleaned restaurant data
+* Engineered business features
+* Analysis-ready metrics
 
-This improved query readability and maintainability.
+---
 
-<img width="1401" height="737" alt="2_ViewCreation" src="https://github.com/user-attachments/assets/45419005-e27e-4646-9bca-7db89616c51b" />
-
--
-
-## SQL Concepts Used
+## SQL Concepts Applied
 
 ### Core SQL
 
 * SELECT
 * WHERE
 * GROUP BY
-* ORDER BY
 * HAVING
+* ORDER BY
 * DISTINCT
 * CASE
 * Aggregate Functions
-
-### Data Transformation
-
-* CAST()
-* ROUND()
-* NULL Handling
-* Datatype Conversion
 
 ### Advanced SQL
 
@@ -177,92 +142,101 @@ This improved query readability and maintainability.
 ### Database Design
 
 * View Creation
-* Reusable Analytical Architecture
+* Analytical Data Modeling
 
 ---
 
-## Business Analysis Performed
+## Power BI Data Model
 
-### Market Analysis
+A star schema was designed using the analytical SQL view.
+
+### Fact Table
+
+* Fact_Restaurants
+
+### Dimension Tables
+
+* Dim_Location
+* Dim_CostBucket
+* Dim_RatingCategory
+
+The model supports scalable reporting and interactive business analysis.
+
+---
+
+## Dashboard Pages
+
+### Executive Overview
+
+Provides a high-level summary of the Bangalore restaurant market:
+
+* Total Restaurants
+* Average Rating
+* Total Votes
+* Average Cost
+* Rating Distribution
+* Cost Distribution
+
+### Location Performance Analysis
+
+Compares restaurant performance across locations:
 
 * Restaurant concentration by location
-* Highest-rated restaurant hubs
-* Hidden market opportunity analysis
+* Rating vs restaurant count
+* Cost vs rating analysis
+* Location benchmarking
 
-### Service Model Analysis
+### Service & Discovery Analysis
 
-* Delivery vs non-delivery performance comparison
-* Table booking vs non-booking performance analysis
+Evaluates business models and customer behavior:
 
-### Pricing Analysis
-
-* Pricing vs customer satisfaction analysis
-* Affordable high-performing restaurant identification
-
-  <img width="872" height="437" alt="3_Affordable_Restaurants_Analysis" src="https://github.com/user-attachments/assets/1a7f03a8-a9b4-4877-bab2-c3dd55360d6f" />
-
-
-### Brand Performance Analysis
-
-* Restaurant chains by outlet presence
-* Most popular brands by total engagement
-* Chain efficiency analysis using votes per outlet
-
-### Cuisine Analysis
-
-* Top-performing cuisine combinations by ratings and engagement
-
-
-
-
-### Discovery Analysis
-
-* Hidden gems: highly rated but lesser-known restaurants
-
-### Advanced Ranking Analysis
-
-* Top-performing unique restaurants by Bangalore location
-<img width="816" height="737" alt="4_Top_Restaurants_Analysis" src="https://github.com/user-attachments/assets/606a9728-4d2f-44bc-b2a8-1793fbd71db7" />
----
-
-## Key Business Insights
-
-* Premium restaurants generally achieve stronger customer ratings and engagement than lower-priced segments.
-
-* Restaurants offering table booking consistently outperform non-booking restaurants in ratings, popularity, and pricing.
-
-* Affordable restaurants can still deliver exceptional customer satisfaction, proving that high quality is not limited to premium pricing.
-
-* Premium social dining brands generate significantly higher customer engagement per outlet than mass-market chains.
-
-* Several Bangalore locations show strong restaurant demand but weaker customer satisfaction, indicating potential market opportunities.
-
-* Premium fusion cuisine combinations tend to outperform traditional mass-market categories in both ratings and engagement.
+* Delivery vs non-delivery performance
+* Table booking impact analysis
+* Restaurant popularity analysis
+* Top-performing restaurant chains
+* Affordable high-rated restaurant discovery
 
 ---
 
-## What I Learned
+## Key Insights
 
-This project significantly strengthened both technical SQL skills and analytical thinking.
+* Locations such as Koramangala, BTM, and Indiranagar dominate restaurant activity.
+* Restaurants offering table booking consistently achieve stronger customer ratings.
+* Delivery-enabled restaurants generate significantly higher customer engagement.
+* Premium dining brands attract higher ratings and customer interaction.
+* Several affordable restaurants maintain ratings above 4.5 while remaining highly accessible.
+* Restaurant popularity is influenced by both service availability and pricing strategy.
 
-### Technical Skills
+---
 
-* Auditing messy real-world datasets
-* Cleaning inconsistent business data
-* Handling duplicate records
-* Transforming textual numeric values
-* Building reusable analytical SQL views
-* Applying advanced window functions
-* Implementing ranking and deduplication logic
+## Skills Demonstrated
 
-### Analytical Skills
+### SQL
 
-* Translating business questions into SQL logic
-* Engineering business-focused analytical metrics
-* Measuring customer behavior through KPIs
-* Comparing business models using data
-* Identifying performance patterns and opportunity gaps
-* Converting raw data into actionable insights
+* Data Auditing
+* Data Cleaning
+* Feature Engineering
+* Window Functions
+* Ranking Logic
+* Analytical Query Design
+
+### Power BI
+
+* Star Schema Modeling
+* DAX Measures
+* Interactive Dashboards
+* KPI Development
+* Business Storytelling
+
+### Analytics
+
+* Market Analysis
+* Customer Behavior Analysis
+* Pricing Analysis
+* Service Performance Analysis
+* Business Recommendation Development
+
+---
 
 ## Author
 
